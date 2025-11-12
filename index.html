@@ -65,8 +65,118 @@
           <ul>
             <li><a href="index.html" class="active">Início</a></li>
             <li><a href="about.html">Sobre nós</a></li>
-            <li><a href="services.html">Nossos Serviços</a></li>
-            <li><a href="testimonials.html">Testemunhos</a></li>
+            <!-- Links com diretórios futuramente -->
+            <!-- <li><a href="services.html">Nossos Serviços</a></li>
+            <li><a href="testimonials.html">Testemunhos</a></li> -->
+
+            <!-- efeitos com JS -->
+            <!-- <li><a href="#" id="servicos">Nossos Serviços</a></li>
+            <script>
+              document
+                .getElementById("servicos")
+                .addEventListener("click", function (event) {
+                  event.preventDefault(); // impede de seguir o link
+                  alert("Nossos serviços estão em desenvolvimento!");
+                });
+            </script> -->
+
+            <!-- efeitos com bootstrap -->
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#servicosModal"
+                  >Nossos Serviços</a
+                >
+              </li>
+            </ul>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="servicosModal"
+              tabindex="-1"
+              aria-labelledby="servicosModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="servicosModalLabel">
+                      Informação
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Fechar"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Nossos serviços estão em desenvolvimento. Em breve,
+                    novidades!
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fechar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#servicosModal"
+                  >Testemunhos</a
+                >
+              </li>
+            </ul>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="servicosModal"
+              tabindex="-1"
+              aria-labelledby="servicosModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="servicosModalLabel">
+                      Informação!
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Fechar"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Nossos serviços estão em desenvolvimento. Em breve,
+                    novidades!
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fechar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- <li><a href="#">Blog</a></li> -->
             <!-- <li class="dropdown">
               <a href="#"
@@ -93,7 +203,7 @@
                 <li><a href="#">Dropdown 4</a></li>
               </ul>
             </li> -->
-            <li><a href="contact.html">Contacto</a></li>
+            <!-- <li><a href="contact.html">Contacto</a></li> -->
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -720,7 +830,7 @@
         </div>
         <!-- End Section Title -->
 
-        <!-- <div class="services-carousel-wrap">
+        <div class="services-carousel-wrap">
           <div class="container">
             <div class="swiper init-swiper">
               <script type="application/json" class="swiper-config">
@@ -870,7 +980,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- /Services 2 Section -->
 
       <!-- Testimonials Section -->
@@ -1145,7 +1255,7 @@
           <div class="row gy-4">
             <div class="col-lg-4 col-md-6 footer-about">
               <a href="index.html" class="logo d-flex align-items-center">
-                <span class="sitename">Green Solution</span>
+                <span class="sitename">Green Generation</span>
               </a>
               <div class="footer-contact pt-3">
                 <p>A108 Adam Street</p>
